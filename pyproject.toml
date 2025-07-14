@@ -28,15 +28,15 @@
     style = "pep440"
 
 [tool.poetry.dependencies]
-    python = "^3.9"
-    cartopy = "^0.21.1" # Needed by pytroll-schedule but not specified there
-    matplotlib = "^3.6.3" # Needed by pytroll-schedule but not specified there
+    python = "^3.12"
+    cartopy = "^0.24" # Needed by pytroll-schedule but not specified there
+    matplotlib = "^3.9.4" # Needed by pytroll-schedule but not specified there
     posttroll = "^1.9.0"
     pyorbital = "^1.7.3"
     pyresample = "^1.26.0"
-    pytroll-schedule = "^0.6.0"
+    pytroll-schedule = "^0.7.5"
     pyyaml = "^6.0"
-    trollsift = "^0.5.0"
+    trollsift = "^0.5.3"
 
 [tool.poetry.dev-dependencies]
     black = "^23.1.0"
