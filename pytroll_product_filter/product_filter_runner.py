@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2017 - 2023 Adam.Dybbroe
+# Copyright (c) 2017 - 2023, 2025 Adam.Dybbroe
 
 # Author(s):
 
@@ -122,7 +122,7 @@ class ProductFilterRunner(Thread):
             filename = "iasi_{0}__twt_l2p_{1}.bin".format(
                 mletter, start_time.strftime("%y%m%d%H%M")
             )
-        elif instrument in ["ascat"]:
+        elif instrument in ["ascat"] and "EARS" in self.input_topics:
             # Examples:
             # ascat_b_ears250_1706211008.bin
             # ascat_a_earscoa_1706211058.bin
